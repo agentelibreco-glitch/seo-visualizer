@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DAVINCI PROJECTS — Guía de Estilo & Brand Book Oficial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --orange: #F47721;
+      --orange-light: #FFB381;
+      --orange-pale: #FFF4ED;
+      --gray: #83858A;
+      --gray-light: #E4E5E7;
+      --graphite: #303238;
+      --ink: #111111;
+      --paper: #FAFAFA;
+      --white: #FFFFFF;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--paper);
+      color: var(--graphite);
+      font-family: 'Manrope', -apple-system, sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .wrap { max-width: 1140px; margin: 0 auto; padding: 0 32px; }
+
+    /* HEADER / HERO */
+    .hero {
+      background: var(--graphite);
+      color: var(--white);
+      padding: 72px 0 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: -100px;
+      right: -100px;
+      width: 400px;
+      height: 400px;
+      background: radial-gradient(circle, rgba(244, 119, 33, 0.15) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .badge {
+      display: inline-block;
+      text-transform: uppercase;
+      letter-spacing: .2em;
+      font-weight: 800;
+      font-size: 11px;
+      color: var(--orange-light);
+      background: rgba(244, 119, 33, 0.12);
+      border: 1px solid rgba(244, 119, 33, 0.3);
+      padding: 6px 14px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+    }
+    .hero h1 {
+      font-size: clamp(38px, 6vw, 68px);
+      line-height: 1.05;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      max-width: 820px;
+      margin-bottom: 20px;
+    }
+    .hero h1 span.accent {
+      color: var(--orange);
+    }
+    .hero p {
+      font-size: 20px;
+      color: #D7D8DA;
+      max-width: 660px;
+      line-height: 1.5;
+    }
+    .hero-rule {
+      height: 4px;
+      width: 80px;
+      background: var(--orange);
+      margin-top: 36px;
+      border-radius: 2px;
+    }
+
+    /* SECTIONS */
+    .section {
+      padding: 80px 0;
+      border-bottom: 1px solid var(--gray-light);
+    }
+    .section-eyebrow {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .2em;
+      font-weight: 800;
+      color: var(--orange);
+      margin-bottom: 16px;
+    }
+    .section-title {
+      font-size: 32px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--ink);
+      margin-bottom: 16px;
+    }
+    .lead {
+      font-size: 18px;
+      color: var(--gray);
+      margin-bottom: 36px;
+      max-width: 720px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 36px;
+    }
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    /* LOGO DISPLAY */
+    .logo-card {
+      background: var(--white);
+      border: 1px solid #E2E3E5;
+      border-radius: 16px;
+      padding: 36px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 280px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+      transition: transform .2s ease;
+    }
+    .logo-card.dark {
+      background: var(--graphite);
+      border-color: #3f424a;
+    }
+    .logo-card img, .logo-card svg {
+      max-width: 100%;
+      height: auto;
+      max-height: 180px;
+    }
+    .logo-caption {
+      margin-top: 18px;
+      text-align: center;
+    }
+    .logo-caption strong {
+      display: block;
+      color: var(--ink);
+      font-size: 15px;
+      margin-bottom: 4px;
+    }
+    .logo-caption span {
+      font-size: 13px;
+      color: var(--gray);
+    }
+
+    /* COLOR PALETTE */
+    .swatch {
+      border-radius: 14px;
+      overflow: hidden;
+      background: var(--white);
+      border: 1px solid #E2E3E5;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+    }
+    .swatch-fill {
+      height: 130px;
+      width: 100%;
+      position: relative;
+    }
+    .swatch-details {
+      padding: 18px;
+    }
+    .swatch-name {
+      font-weight: 800;
+      font-size: 16px;
+      color: var(--ink);
+      margin-bottom: 4px;
+    }
+    .swatch-hex {
+      font-family: monospace;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--orange);
+      margin-bottom: 6px;
+    }
+    .swatch-desc {
+      font-size: 12px;
+      color: var(--gray);
+      line-height: 1.4;
+    }
+
+    /* TYPOGRAPHY */
+    .type-specimen {
+      background: var(--white);
+      border: 1px solid #E2E3E5;
+      border-radius: 16px;
+      padding: 36px;
+    }
+    .type-large {
+      font-size: 48px;
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.04em;
+      margin-bottom: 16px;
+      color: var(--ink);
+    }
+    .type-large span.accent {
+      color: var(--orange);
+    }
+
+    /* VOICE CARDS */
+    .voice-card {
+      background: var(--white);
+      border-left: 4px solid var(--orange);
+      border-radius: 0 12px 12px 0;
+      padding: 24px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+    }
+    .voice-card h4 {
+      font-size: 16px;
+      font-weight: 800;
+      color: var(--ink);
+      margin-bottom: 8px;
+    }
+    .voice-card p {
+      font-size: 14px;
+      color: var(--graphite);
+    }
+
+    /* DOs & DONTs */
+    .rule-box {
+      border-radius: 14px;
+      padding: 24px;
+    }
+    .rule-box.do {
+      background: #F0FDF4;
+      border: 1px solid #BBF7D0;
+    }
+    .rule-box.dont {
+      background: #FEF2F2;
+      border: 1px solid #FECACA;
+    }
+    .rule-box h4 {
+      font-size: 15px;
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+    .rule-box.do h4 { color: #15803D; }
+    .rule-box.dont h4 { color: #B91C1C; }
+    .rule-box ul {
+      list-style: none;
+      font-size: 13.5px;
+      line-height: 1.7;
+    }
+    .rule-box.do ul li::before { content: "✓ "; color: #15803D; font-weight: bold; }
+    .rule-box.dont ul li::before { content: "✕ "; color: #B91C1C; font-weight: bold; }
+
+    footer {
+      background: var(--ink);
+      color: #9E9E9E;
+      padding: 40px 0;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 800px) {
+      .grid-2, .grid-3 { grid-template-columns: 1fr; }
+      .section { padding: 50px 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="wrap">
+      <div class="badge">Brand Identity & Style Guide · 2026</div>
+      <h1>Ingenio humano, <span class="accent">amplificado por IA.</span></h1>
+      <p>Guía oficial de identidad visual, tipografía, paleta cromática y lineamientos de uso para <strong>DAVINCI PROJECTS</strong>.</p>
+      <div class="hero-rule"></div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- 01 · IDENTIDAD Y LOGO -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-eyebrow">01 · Sistema de Logotipo</div>
+        <h2 class="section-title">El Símbolo Vitruviano & Wordmark</h2>
+        <p class="lead">Inspirado en el Hombre de Vitruvio de Leonardo Da Vinci. Representa el ser humano en el centro del diseño tecnológico: la IA expande la capacidad humana, nunca la reemplaza.</p>
+
+        <div class="grid-2">
+          <!-- Logo Original / Full Color -->
+          <div class="logo-card">
+            <img src="assets/brand/davinci-logo-original.jpg" alt="DAVINCI PROJECTS Logo Oficial">
+            <div class="logo-caption">
+              <strong>Logo Oficial Primario</strong>
+              <span>Versión full color original: Vitruvio Naranja (#F47721) + Gris (#83858A)</span>
+            </div>
+          </div>
+
+          <!-- Logo Horizontal SVG -->
+          <div class="logo-card">
+            <img src="assets/brand/davinci-logo-horizontal.svg" alt="DAVINCI PROJECTS Horizontal">
+            <div class="logo-caption">
+              <strong>Lockup Horizontal SVG</strong>
+              <span>Ideal para encabezados web, firmas de correo, menús y portales</span>
+            </div>
+          </div>
+
+          <!-- Logo Monocromático Negro -->
+          <div class="logo-card">
+            <img src="assets/brand/davinci-logo-mono.svg" alt="DAVINCI Monocromático Negro" style="max-height: 140px;">
+            <div class="logo-caption">
+              <strong>Monocromático Negro</strong>
+              <span>Uso formal en propuestas impresas, facturación y sellos</span>
+            </div>
+          </div>
+
+          <!-- Logo Inverso Blanco (Fondo Oscuro) -->
+          <div class="logo-card dark">
+            <img src="assets/brand/davinci-logo-inverse.svg" alt="DAVINCI Inverso Blanco" style="max-height: 140px;">
+            <div class="logo-caption" style="color:#FFF;">
+              <strong style="color:#FFF;">Versión Inversa (Blanco)</strong>
+              <span style="color:#AAA;">Para fondos oscuros, hero sections, modo noche o pie de página</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 36px; padding: 24px; background: #FFF; border: 1px solid #E2E3E5; border-radius: 14px;">
+          <h3 style="font-size: 16px; font-weight: 800; margin-bottom: 8px;">Reglas de Naming y Uso del Logo</h3>
+          <p style="font-size: 14px; color: var(--graphite);">
+            • <strong>Nombre Oficial:</strong> <code>DAVINCI PROJECTS</code> (en mayúsculas continuas para el logotipo).<br>
+            • <strong>Palabra de acento:</strong> "DAVINCI" va siempre en Naranja Oficial (#F47721) y "PROJECTS" en Gris (#83858A).<br>
+            • <strong>Descriptivo:</strong> <em>Digital Projects • AI Consulting</em>.<br>
+            • <strong>Zona de seguridad:</strong> Mantener un margen equivalente al diámetro de la cabeza de la figura alrededor de todo el imagotipo.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 · PALETA DE COLOR -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-eyebrow">02 · Paleta Cromática</div>
+        <h2 class="section-title">Colores Oficiales de la Marca</h2>
+        <p class="lead">Una combinación energética y tecnológica: Naranja de activación balanceado con tonos neutros sobrios (Grafito, Gris Leonardo y Blanco Puro).</p>
+
+        <div class="grid-3">
+          <!-- Orange Primary -->
+          <div class="swatch">
+            <div class="swatch-fill" style="background: #F47721;"></div>
+            <div class="swatch-details">
+              <div class="swatch-name">Da Vinci Orange</div>
+              <div class="swatch-hex">#F47721</div>
+              <div class="swatch-desc">Color principal de acento, CTAs, botones, palabras clave y llamada a la acción.</div>
+            </div>
+          </div>
+
+          <!-- Leonardo Gray -->
+          <div class="swatch">
+            <div class="swatch-fill" style="background: #83858A;"></div>
+            <div class="swatch-details">
+              <div class="swatch-name">Leonardo Gray</div>
+              <div class="swatch-hex">#83858A</div>
+              <div class="swatch-desc">Color secundario del isotipo, texto de soporte, bordes y subtítulos.</div>
+            </div>
+          </div>
+
+          <!-- Graphite Dark -->
+          <div class="swatch">
+            <div class="swatch-fill" style="background: #303238;"></div>
+            <div class="swatch-details">
+              <div class="swatch-name">Graphite Neutral</div>
+              <div class="swatch-hex">#303238</div>
+              <div class="swatch-desc">Fondos oscuros, barras de navegación, encabezados formales y texto de contraste.</div>
+            </div>
+          </div>
+
+          <!-- Ink Black -->
+          <div class="swatch">
+            <div class="swatch-fill" style="background: #111111;"></div>
+            <div class="swatch-details">
+              <div class="swatch-name">Ink Black</div>
+              <div class="swatch-hex">#111111</div>
+              <div class="swatch-desc">Negro institucional para tipografía formal y versiones monocromáticas.</div>
+            </div>
+          </div>
+
+          <!-- Orange Light -->
+          <div class="swatch">
+            <div class="swatch-fill" style="background: #FFB381;"></div>
+            <div class="swatch-details">
+              <div class="swatch-name">Orange Tint (Light)</div>
+              <div class="swatch-hex">#FFB381</div>
+              <div class="swatch-desc">Textos de acento sobre fondos oscuros (cumple accesibilidad WCAG AA).</div>
+            </div>
+          </div>
+
+          <!-- Pure Paper -->
+          <div class="swatch">
+            <div class="swatch-fill" style="background: #FFFFFF; border-bottom: 1px solid #EEE;"></div>
+            <div class="swatch-details">
+              <div class="swatch-name">Pure Paper</div>
+              <div class="swatch-hex">#FFFFFF / #FAFAFA</div>
+              <div class="swatch-desc">Fondos limpios, tarjetas de contenido y espacios amplios en blanco.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 · TIPOGRAFÍA -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-eyebrow">03 · Tipografía Corporativa</div>
+        <h2 class="section-title">Estructura & Jerarquía Tipográfica</h2>
+        <p class="lead">Tipografías geométricas, modernas y de alta legibilidad en pantalla e impresión.</p>
+
+        <div class="grid-2">
+          <!-- Manrope -->
+          <div class="type-specimen">
+            <span class="badge" style="margin-bottom: 12px;">Fuente Primaria</span>
+            <div class="type-large">Manrope</div>
+            <p style="font-weight: 700; font-size: 16px; margin-bottom: 8px;">Pesos: 400 (Body), 600 (Labels/Botones), 800 (Titulares)</p>
+            <p style="color: var(--gray); font-size: 14px; margin-bottom: 20px;">
+              Tipografía sans-serif moderna de geometría limpia. Diseñada para pantallas digitales y productos SaaS.
+            </p>
+            <div style="font-size: 24px; font-weight: 800; color: var(--ink);">
+              Soluciones Prácticas de <span class="accent">Inteligencia Artificial</span>
+            </div>
+          </div>
+
+          <!-- Playfair Display -->
+          <div class="type-specimen">
+            <span class="badge" style="margin-bottom: 12px; background: rgba(131, 133, 138, 0.15); border-color: rgba(131, 133, 138, 0.3); color: var(--graphite);">Editorial / Acentos</span>
+            <div class="type-large" style="font-family: 'Playfair Display', Georgia, serif; font-style: italic;">Playfair Display</div>
+            <p style="font-weight: 700; font-size: 16px; margin-bottom: 8px;">Pesos: 600 (Semibold), 700 (Bold Italic)</p>
+            <p style="color: var(--gray); font-size: 14px; margin-bottom: 20px;">
+              Tipografía con serifa para citas de impacto, portadas de propuestas ejecutivas y declaraciones de visión.
+            </p>
+            <div style="font-family: 'Playfair Display', Georgia, serif; font-size: 24px; color: var(--graphite); font-style: italic;">
+              "El conocimiento humano al centro de la innovación."
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 · REGLAS DE APLICACIÓN -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-eyebrow">04 · Reglas de Aplicación</div>
+        <h2 class="section-title">Qué Hacer y Qué Evitar</h2>
+        <p class="lead">Garantiza la consistencia en todos los puntos de contacto de la marca.</p>
+
+        <div class="grid-2">
+          <div class="rule-box do">
+            <h4>✓ Prácticas Recomendadas</h4>
+            <ul>
+              <li>Usar el <strong>Naranja (#F47721)</strong> en palabras completas o botones para dar énfasis directo.</li>
+              <li>Mantener el logotipo monocromático (blanco o negro) cuando el fondo sea fotográfico o saturado.</li>
+              <li>Asegurar contrastes legibles: usar <code>#FFB381</code> sobre fondo grafito para textos pequeños.</li>
+              <li>Dejar espacios en blanco generosos (white space) entre secciones de contenido.</li>
+              <li>Hablar de beneficios de negocio claros en español colombiano profesional.</li>
+            </ul>
+          </div>
+
+          <div class="rule-box dont">
+            <h4>✕ Prácticas Prohibidas</h4>
+            <ul>
+              <li><strong>NO usar gradientes multicolor en textos</strong> (evitar mezclar azul, verde o degradados en títulos).</li>
+              <li><strong>NO deformar ni estirar</strong> las proporciones del isotipo Vitruviano.</li>
+              <li><strong>NO cambiar los colores del isotipo</strong> por tonos no autorizados (evitar azul cyan, verde o morado).</li>
+              <li><strong>NO usar "DA VINCI" con espacio</strong> en el logotipo; el wordmark oficial es <strong>DAVINCI</strong>.</li>
+              <li><strong>NO usar imágenes genéricas de robots cliché</strong> o circuitos fluorescentes en la comunicación.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 · VOZ Y TONO -->
+    <section class="section">
+      <div class="wrap">
+        <div class="section-eyebrow">05 · Voz y Tono de Marca</div>
+        <h2 class="section-title">Personalidad en la Comunicación</h2>
+        <div class="grid-3" style="margin-top: 24px;">
+          <div class="voice-card">
+            <h4>Humano antes que Técnico</h4>
+            <p>Comenzamos por el reto operativo o la necesidad del equipo humano. La IA es el medio para lograr el objetivo, no el espectáculo principal.</p>
+          </div>
+          <div class="voice-card">
+            <h4>Pragmático y Específico</h4>
+            <p>Decimos "ahorre 70% de tiempo en digitación" en lugar de "revolucione su paradigma digital". Claridad ante todo.</p>
+          </div>
+          <div class="voice-card">
+            <h4>Seguro y Sin Exageraciones</h4>
+            <p>Demostramos con prototipos reales y casos locales en Colombia. No prometemos magia ni resultados irreales.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p style="font-weight: 700; color: #FFF; margin-bottom: 6px;">DAVINCI PROJECTS • DIGITAL PROJECTS & AI CONSULTING</p>
+      <p>Cúcuta, Colombia · Consultor: Tony Armando Sánchez González · © 2026 Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

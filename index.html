@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Da Vinci Projects | Consultoría en Transformación Digital & Agentes de IA</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            500: '#0284c7',
+                            600: '#0369a1',
+                            900: '#0f172a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-sky-500 selection:text-white">
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-sky-500 to-amber-500 flex items-center justify-center font-black text-xl text-white shadow-lg shadow-sky-500/20">
+                    DV
+                </div>
+                <div>
+                    <span class="text-xl font-extrabold tracking-wider text-white">DA VINCI</span>
+                    <span class="text-xs block text-sky-400 font-medium tracking-widest uppercase">Projects • AI Consulting</span>
+                </div>
+            </div>
+
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#servicios" class="hover:text-sky-400 transition-colors">Servicios</a>
+                <a href="#capacitacion" class="hover:text-sky-400 transition-colors">Capacitación IA</a>
+                <a href="#paquetes" class="hover:text-sky-400 transition-colors">Propuestas & Precios</a>
+                <a href="#clientes" class="hover:text-sky-400 transition-colors">Clientes</a>
+                <a href="#contacto" class="hover:text-sky-400 transition-colors">Contacto</a>
+            </div>
+
+            <div>
+                <a href="https://wa.me/573022773736?text=Hola%20Da%20Vinci%20Projects,%20quiero%20agendar%20un%20diagnóstico%20de%20IA" target="_blank" class="bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white px-5 py-2.5 rounded-full font-semibold text-sm transition-all shadow-lg shadow-sky-500/25 flex items-center space-x-2">
+                    <i class="fab fa-whatsapp text-lg"></i>
+                    <span>Diagnóstico IA Gratis</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="pt-36 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center relative overflow-hidden">
+        <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-sky-950/80 border border-sky-800/50 text-sky-300 text-xs font-semibold mb-8">
+            <span class="w-2 h-2 rounded-full bg-sky-400 animate-pulse"></span>
+            <span>Consultoría en Inteligencia Artificial Agéntica 2026</span>
+        </div>
+
+        <h1 class="text-4xl sm:text-6xl font-black text-white tracking-tight max-w-4xl mx-auto leading-tight">
+            Evolucione su Empresa con <span class="bg-gradient-to-r from-sky-400 via-blue-400 to-amber-400 bg-clip-text text-transparent">Agentes de IA & Automatización</span>
+        </h1>
+
+        <p class="mt-6 text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
+            Diseñamos portales web inteligentes, flujos de trabajo automatizados con n8n/Make y programas de capacitación corporativa para escalar la productividad de su negocio en Colombia.
+        </p>
+
+        <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a href="#paquetes" class="w-full sm:w-auto bg-sky-500 hover:bg-sky-400 text-slate-900 font-bold px-8 py-4 rounded-xl transition-all shadow-xl shadow-sky-500/20 text-center">
+                Ver Propuestas & Precios
+            </a>
+            <a href="#capacitacion" class="w-full sm:w-auto bg-slate-800 hover:bg-slate-700 text-white font-semibold px-8 py-4 rounded-xl border border-slate-700 transition-all text-center">
+                Capacitación Empresarial IA
+            </a>
+        </div>
+
+        <!-- STATS BADGE -->
+        <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto text-left">
+            <div class="p-4 rounded-2xl bg-slate-800/40 border border-slate-800 backdrop-blur-sm">
+                <div class="text-3xl font-black text-sky-400">24/7</div>
+                <div class="text-xs text-slate-400 font-medium mt-1">Atención Automatizada</div>
+            </div>
+            <div class="p-4 rounded-2xl bg-slate-800/40 border border-slate-800 backdrop-blur-sm">
+                <div class="text-3xl font-black text-amber-400">70%</div>
+                <div class="text-xs text-slate-400 font-medium mt-1">Ahorro en Tareas Manuales</div>
+            </div>
+            <div class="p-4 rounded-2xl bg-slate-800/40 border border-slate-800 backdrop-blur-sm">
+                <div class="text-3xl font-black text-emerald-400">+100</div>
+                <div class="text-xs text-slate-400 font-medium mt-1">Integraciones n8n/Make</div>
+            </div>
+            <div class="p-4 rounded-2xl bg-slate-800/40 border border-slate-800 backdrop-blur-sm">
+                <div class="text-3xl font-black text-purple-400">100%</div>
+                <div class="text-xs text-slate-400 font-medium mt-1">Personalizado para su Marca</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="py-20 bg-slate-950 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-sky-400">Nuestras Soluciones</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Servicios de Consultoría e Implementación IA</p>
+                <p class="text-slate-400 mt-4">Conectamos tecnología de vanguardia con las necesidades operativas de su empresa.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl hover:border-sky-500/50 transition-all group">
+                    <div class="w-14 h-14 bg-sky-500/10 rounded-2xl flex items-center justify-center text-sky-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-robot"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Portal Web + Agentes RAG</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Desarrollo web optimizado UI/UX integrado con chatbots entrenados con la base de conocimiento de su negocio para calificar leads y agendar citas 24/7.
+                    </p>
+                    <span class="text-xs font-semibold text-sky-400">Desde $1.850.000 COP</span>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl hover:border-amber-500/50 transition-all group">
+                    <div class="w-14 h-14 bg-amber-500/10 rounded-2xl flex items-center justify-center text-amber-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-diagram-project"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Automatización n8n & CRMs</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Conectamos sus formularios, WhatsApp Cloud API, correo electrónico, CRMs y ERPs (Siigo/SAP) eliminando la digitación manual de datos.
+                    </p>
+                    <span class="text-xs font-semibold text-amber-400">Desde $550.000 COP / flujo</span>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl hover:border-emerald-500/50 transition-all group">
+                    <div class="w-14 h-14 bg-emerald-500/10 rounded-2xl flex items-center justify-center text-emerald-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-phone-volume"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Agentes de Voz Inteligentes</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Asistentes telefónicos con síntesis de voz hiper-realista para llamadas de confirmación de citas, cobranza inicial o prospección saliente.
+                    </p>
+                    <span class="text-xs font-semibold text-emerald-400">Desde $1.200.000 COP</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CAPACITACION IA -->
+    <section id="capacitacion" class="py-20 bg-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-amber-400">Formación Empresarial</span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-white mt-2 leading-tight">
+                        Capacitación en Transformación Digital & Adopción de IA
+                    </h2>
+                    <p class="text-slate-400 mt-4 leading-relaxed">
+                        Preparamos a su equipo directivo y operativo para usar la Inteligencia Artificial de forma segura, práctica y enfocada en resultados de negocio.
+                    </p>
+
+                    <div class="mt-8 space-y-4">
+                        <div class="flex items-start space-x-4 p-4 rounded-xl bg-slate-800/50 border border-slate-700/50">
+                            <div class="w-8 h-8 rounded-lg bg-sky-500/20 text-sky-400 flex items-center justify-center font-bold text-sm shrink-0">1</div>
+                            <div>
+                                <h4 class="font-bold text-white text-sm">Taller Ejecutivo & Sensibilización (4h)</h4>
+                                <p class="text-slate-400 text-xs mt-0.5">Visión estratégica, gobernanza de datos y mapas de oportunidad para líderes.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4 p-4 rounded-xl bg-slate-800/50 border border-slate-700/50">
+                            <div class="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold text-sm shrink-0">2</div>
+                            <div>
+                                <h4 class="font-bold text-white text-sm">Bootcamp In-Company (16h)</h4>
+                                <p class="text-slate-400 text-xs mt-0.5">Prompt engineering práctico, automatización de documentos y creación de agentes internos.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4 p-4 rounded-xl bg-slate-800/50 border border-slate-700/50">
+                            <div class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-sm shrink-0">3</div>
+                            <div>
+                                <h4 class="font-bold text-white text-sm">Programa Integral & Playbook Corporativo (30h)</h4>
+                                <p class="text-slate-400 text-xs mt-0.5">Diagnóstico profundo, Playbook a medida por áreas y 60 días de acompañamiento continuo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-slate-800 to-slate-950 p-8 rounded-3xl border border-slate-700 relative shadow-2xl">
+                    <h3 class="text-2xl font-bold text-white mb-4">¿Por qué capacitar a su empresa?</h3>
+                    <ul class="space-y-4 text-sm text-slate-300">
+                        <li class="flex items-center space-x-3">
+                            <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                            <span>Reducción de hasta un 60% en tiempos de redacción e informes.</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                            <span>Alineación con la Ley 1581 de Protección de Datos en Colombia.</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fa-solid fa-circle-check text-emerald-400"></i>
+                            <span>Adopción práctica usando datos reales de su empresa.</span>
+                        </li>
+                    </ul>
+
+                    <div class="mt-8 p-4 bg-sky-950/60 rounded-xl border border-sky-800/60 text-xs text-sky-200">
+                        <strong>Nota:</strong> Todas nuestras capacitaciones se entregan con certificación de participación y manuales de consulta.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROPUESTAS & PRECIOS -->
+    <section id="paquetes" class="py-20 bg-slate-950 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-sky-400">Inversión & Planes</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Propuestas Comerciales Listas</p>
+                <p class="text-slate-400 mt-4">Descargue e imprima nuestras propuestas formales en formato PDF.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- PYME -->
+                <div class="bg-slate-900 border-2 border-emerald-500/40 p-8 rounded-3xl relative">
+                    <span class="absolute -top-3.5 right-8 bg-emerald-500 text-slate-950 font-extrabold text-xs px-4 py-1 rounded-full uppercase">Ideal PYMEs</span>
+                    <h3 class="text-2xl font-bold text-white">Propuesta Impulso PYME</h3>
+                    <p class="text-slate-400 text-sm mt-2">Solución esencial, ágil y ajustada para pequeñas empresas.</p>
+                    
+                    <div class="my-6 space-y-3 text-sm text-slate-300">
+                        <div>✔ Web PYME + Bot WhatsApp 24/7 ($1.85M)</div>
+                        <div>✔ Gestión de Redes Sociales ($680k/mes)</div>
+                        <div>✔ Automatización de Leads ($550k)</div>
+                        <div>✔ Taller Express Capacitación IA ($650k)</div>
+                    </div>
+
+                    <div class="pt-6 border-t border-slate-800 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-slate-400 block">Combo Impulso</span>
+                            <span class="text-2xl font-black text-emerald-400">$ 2.890.000 COP</span>
+                        </div>
+                        <a href="propuesta_pyme_davinci_ai.html" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-all flex items-center space-x-2">
+                            <i class="fa-solid fa-file-pdf"></i>
+                            <span>Ver PDF PYME</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CORPORATIVO -->
+                <div class="bg-slate-900 border-2 border-sky-500/40 p-8 rounded-3xl relative">
+                    <span class="absolute -top-3.5 right-8 bg-sky-500 text-slate-950 font-extrabold text-xs px-4 py-1 rounded-full uppercase">Enterprise</span>
+                    <h3 class="text-2xl font-bold text-white">Propuesta Corporativa</h3>
+                    <p class="text-slate-400 text-sm mt-2">Ecosistema integral de IA, RAG y transformación digital.</p>
+                    
+                    <div class="my-6 space-y-3 text-sm text-slate-300">
+                        <div>✔ Portal Enterprise UI/UX + Multi-RAG</div>
+                        <div>✔ Capacitación Corporativa In-Company (3 Niveles)</div>
+                        <div>✔ Integración CRM + ERP (Siigo/SAP) + n8n</div>
+                        <div>✔ Agentes de Voz & Transmedia de Marca</div>
+                    </div>
+
+                    <div class="pt-6 border-t border-slate-800 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-slate-400 block">Cotización Enterprise</span>
+                            <span class="text-2xl font-black text-sky-400">Personalizada</span>
+                        </div>
+                        <a href="propuesta_corporativa_davinci_ai.html" target="_blank" class="bg-sky-600 hover:bg-sky-500 text-white font-bold px-5 py-2.5 rounded-xl text-sm transition-all flex items-center space-x-2">
+                            <i class="fa-solid fa-file-pdf"></i>
+                            <span>Ver PDF Corporativo</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLIENTES Y PORTAFOLIO -->
+    <section id="clientes" class="py-20 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-slate-400">Experiencia y Trayectoria</h2>
+            <p class="text-3xl font-extrabold text-white mt-2">Clientes & Proyectos Anteriores</p>
+            
+            <div class="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-6 opacity-75">
+                <div class="p-6 bg-slate-800/50 rounded-2xl border border-slate-700/50 flex items-center justify-center font-bold text-slate-300">Pictorama Co</div>
+                <div class="p-6 bg-slate-800/50 rounded-2xl border border-slate-700/50 flex items-center justify-center font-bold text-slate-300">Sector Comercio</div>
+                <div class="p-6 bg-slate-800/50 rounded-2xl border border-slate-700/50 flex items-center justify-center font-bold text-slate-300">Servicios Profesionales</div>
+                <div class="p-6 bg-slate-800/50 rounded-2xl border border-slate-700/50 flex items-center justify-center font-bold text-slate-300">Marcas Transmedia</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER & CONTACTO -->
+    <footer id="contacto" class="py-16 bg-slate-950 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <div class="text-2xl font-black text-white">DA VINCI PROJECTS</div>
+                    <p class="text-slate-400 text-sm mt-2">Tony Armando Sanchez Gonzalez — Consultor Digital & IA</p>
+                    <p class="text-slate-500 text-xs mt-1">Av. Gran Colombia # 1E- 34, Ofc 201, Cúcuta - Colombia</p>
+                </div>
+
+                <div class="md:text-right space-y-2">
+                    <div class="text-slate-300 text-sm font-semibold">📧 Tonysanchezgonzalez@gmail.com</div>
+                    <div class="text-slate-300 text-sm font-semibold">📱 WhatsApp: +57 302 277 3736</div>
+                </div>
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-slate-900 text-center text-xs text-slate-600">
+                © 2026 Da Vinci Projects. Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

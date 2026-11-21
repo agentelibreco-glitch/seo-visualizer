@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta Comercial PYMES - Da Vinci Projects</title>
+    <style>
+        :root {
+            --primary: #0f172a;
+            --secondary: #16a34a;
+            --accent: #eab308;
+            --bg-light: #f8fafc;
+            --text-dark: #0f172a;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            background-color: #cbd5e1;
+            color: var(--text-dark);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .page {
+            background: white;
+            max-width: 900px;
+            margin: 0 auto 30px auto;
+            padding: 45px;
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid var(--secondary);
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+
+        .brand-title {
+            font-size: 26px;
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: 1px;
+        }
+
+        .brand-subtitle {
+            font-size: 13px;
+            color: var(--secondary);
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .header-meta {
+            text-align: right;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .proposal-badge {
+            display: inline-block;
+            background: #dcfce7;
+            color: #15803d;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-size: 22px;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 17px;
+            color: var(--secondary);
+            margin: 20px 0 12px 0;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 5px;
+        }
+
+        p {
+            margin-bottom: 12px;
+            font-size: 13.5px;
+            color: #334155;
+        }
+
+        .table-custom {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 13px;
+        }
+
+        .table-custom th {
+            background-color: var(--primary);
+            color: white;
+            text-align: left;
+            padding: 10px;
+            font-weight: 600;
+        }
+
+        .table-custom td {
+            padding: 10px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .table-custom tr:nth-child(even) {
+            background-color: var(--bg-light);
+        }
+
+        .price-highlight {
+            font-weight: 700;
+            color: #15803d;
+        }
+
+        .card {
+            background: var(--bg-light);
+            border-left: 4px solid var(--secondary);
+            padding: 12px 18px;
+            margin-bottom: 15px;
+            border-radius: 0 6px 6px 0;
+        }
+
+        .card h3 {
+            font-size: 15px;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+
+        .card ul {
+            padding-left: 18px;
+            font-size: 13px;
+        }
+
+        .card ul li {
+            margin-bottom: 4px;
+        }
+
+        .terms-box {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            padding: 15px;
+            border-radius: 6px;
+            font-size: 12.5px;
+            margin-top: 20px;
+        }
+
+        .footer {
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .page {
+                box-shadow: none;
+                margin: 0;
+                width: 100%;
+                max-width: 100%;
+                padding: 25px;
+            }
+            .no-print {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="no-print" style="text-align: center; margin-bottom: 20px;">
+        <button onclick="window.print()" style="background: #16a34a; color: white; border: none; padding: 12px 24px; font-size: 16px; border-radius: 6px; cursor: pointer; font-weight: bold;">
+            🖨️ Guardar o Imprimir como PDF
+        </button>
+    </div>
+
+    <div class="page">
+        <header>
+            <div>
+                <div class="brand-title">DA VINCI PROJECTS</div>
+                <div class="brand-subtitle">Consulting & Digital Solutions</div>
+            </div>
+            <div class="header-meta">
+                <strong>Propuesta N°:</strong> DVP-2026-PYME<br>
+                <strong>Fecha:</strong> Octubre 2026<br>
+                <strong>Validez:</strong> 15 días
+            </div>
+        </header>
+
+        <span class="proposal-badge">Paquete Impulso PYME</span>
+        <h1>Solución Digital Esencial con Inteligencia Artificial</h1>
+
+        <p><strong>Dirigido a:</strong> Emprendedores, Pequeñas y Medianas Empresas</p>
+        <p>Diseñado especialmente para empresas en crecimiento que buscan automatizar la atención a clientes, posicionar su marca en redes sociales y adoptar herramientas de IA sin incurrir en costos elevados.</p>
+
+        <h2>1. Paquetes Esenciales PYME</h2>
+
+        <table class="table-custom">
+            <thead>
+                <tr>
+                    <th>Servicio / Paquete</th>
+                    <th>Qué Incluye</th>
+                    <th>Inversión (COP)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Portal Web PYME + Bot WhatsApp 24/7</strong></td>
+                    <td>Página web responsive (UI/UX), blog, dominio y hosting (1er año gratis), SSL + Bot Inteligente de captación conectado a WhatsApp.</td>
+                    <td class="price-highlight">$ 1.850.000 <small>(Único)</small></td>
+                </tr>
+                <tr>
+                    <td><strong>Gestión de Redes Sociales + IA</strong></td>
+                    <td>Estrategia mensual, 10 piezas gráficas profesionales, redacción asistida por IA y publicación en 1 red social seleccionada.</td>
+                    <td class="price-highlight">$ 680.000 / mes</td>
+                </tr>
+                <tr>
+                    <td><strong>Automatización de Leads (n8n/Make)</strong></td>
+                    <td>1 flujo de automatización: Los leads que entren por Web o WhatsApp se guardan automáticamente en Excel/Google Sheets y envían notificación inmediata a tu correo.</td>
+                    <td class="price-highlight">$ 550.000 <small>(Único)</small></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>2. Taller Express: IA para la Productividad PYME</h2>
+        <div class="card">
+            <h3>Capacitación Virtual Express (4 Horas) — Inversión: $ 650.000 COP</h3>
+            <ul>
+                <li>Sesión práctica en vivo para el equipo de ventas y administración (hasta 8 personas).</li>
+                <li>Uso de ChatGPT/Gemini para redactar propuestas, responder correos y crear anuncios en minutos.</li>
+                <li>Plantillas de Prompts listas para usar en tu negocio.</li>
+            </ul>
+        </div>
+
+        <h2>3. Paquete Combo "PYME Agéntica Completa"</h2>
+        <div class="card" style="border-left-color: #eab308; background: #fffbeb;">
+            <h3>Oferta Especial Combo Impulso ($ 2.890.000 COP — Ahorras $ 840.000 COP)</h3>
+            <ul>
+                <li>✅ Portal Web UI/UX + Bot WhatsApp 24/7.</li>
+                <li>✅ 1er Mes de Gestión de Redes Sociales.</li>
+                <li>✅ 1 Flujo de Automatización de Leads.</li>
+                <li>✅ Taller Express de Capacitación en IA.</li>
+            </ul>
+        </div>
+
+        <div class="terms-box">
+            <strong>Condiciones Comerciales PYME:</strong>
+            <ul>
+                <li><strong>Forma de Pago:</strong> 60% de anticipo al inicio y 40% saldo al momento de la entrega.</li>
+                <li><strong>Tiempo de Entrega:</strong> 15 a 20 días hábiles tras recibir los insumos del negocio.</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <div>Tony Armando Sanchez Gonzalez — Consultor Digital</div>
+            <div>Tonysanchezgonzalez@gmail.com | WhatsApp: +57 302 277 3736 | Cúcuta, Colombia</div>
+        </div>
+    </div>
+
+</body>
+</html>
